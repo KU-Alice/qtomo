@@ -1,2 +1,49 @@
-# qtomo-
-Quantum tomography 
+﻿# Compare Angles — ROOT Visualization Tool
+
+This project provides a simple **C++ ROOT-based** utility to compare angular distributions (cos θ and φ) **before and after** a transformation or simulation step.  
+The histograms are automatically **normalized to unit area**, enabling a fair visual comparison between data.
+
+---
+
+## 📦 Requirements
+### 🧰 Compiler
+- **C++17 or newer**
+  - Required features: `<string_view>`, structured bindings, etc.
+  - Tested with:
+    - Microsoft Visual Studio **2022 (MSVC v19.44+)**
+    - GCC **9.0+**
+    - Clang **10.0+**
+
+### ⚛️ ROOT Framework
+- **ROOT ≥ 6.26**
+  - Tested with **ROOT 6.30/06** (64-bit build for Windows)
+  - Must include the following libraries:
+    ```
+    Core.lib Hist.lib Graf.lib Gpad.lib Graf3d.lib RIO.lib Matrix.lib Imt.lib
+    ```
+
+---
+
+## ⚙️ File Structure
+AngleCalc.h:  Header File for calculating the angles  
+main.cpp:  Main file of the project  
+randomEventGenerator.cpp:  Random Data Generator  
+anglePlotter.cpp:  Angle plotter before and after  
+
+---
+
+## ▶️ Instructions to Run 
+Compile the project and run main.cpp
+
+---
+
+## 📊 Outputs
+This project automatically generates the following files:
+
+- events.csv  
+- phi1_list.csv  
+- phi2_list.csv  
+- updated_phi_list.csv  
+- updated_theta_list.csv  
+- cosTheta_comparison_hist.png  
+- phi_comparison_hist.png
