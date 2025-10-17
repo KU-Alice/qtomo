@@ -1,11 +1,8 @@
-﻿# Compare Angles — ROOT Visualization Tool
-
-This project provides a simple **C++ ROOT-based** utility to compare angular distributions (cos θ and φ) **before and after** a transformation or simulation step.  
-The histograms are automatically **normalized to unit area**, enabling a fair visual comparison between data.
-
+﻿# Angle Determination Module Part 
+This submodule consumes data pair in the format of  X1,Y1,Z1,E1 and X2,Y2,Z2,E2 and calculates Cosine theta and Phi.
 ---
 
-## 📦 Requirements
+### 📦 Requirements
 ### 🧰 Compiler
 - **C++17 or newer**
   - Required features: `<string_view>`, structured bindings, etc.
@@ -34,12 +31,9 @@ anglePlotter.cpp:  Angle plotter before and after
 
 ## ▶️ Instructions to Run 
 Compile the project and run main.cpp
-
 ---
-
 ## 📊 Outputs
 This project automatically generates the following files:
-
 - events.csv  
 - phi1_list.csv  
 - phi2_list.csv  
