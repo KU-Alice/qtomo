@@ -43,8 +43,10 @@ int runAngleCalculator(const char* fileName) {
 		}
 	}
 	file.close();
-	std::ofstream cosOut("updated_theta_list.csv");
-	std::ofstream phiOut("updated_phi_list.csv");
+    const char* cos_out = "updated_theta_list.csv";
+    const char* phi_out = "updated_phi_list.csv";
+	std::ofstream cosOut(cos_out);
+	std::ofstream phiOut(phi_out);
 	if (!cosOut.is_open()) {
 		std::cerr << "Error: cannot open cosTheta_list.txt\n";
 		return 1;
@@ -71,14 +73,12 @@ int runAngleCalculator(const char* fileName) {
 	cosOut.close();
 	std::cout << "Saved cosTheta_CS values to phi_list.txt\n";
 
-	const char* cos_before = "cos_theta_list.csv";
-	const char* cos_after = "updated_theta_list.csv";
-	const char* phi_before = "cos_phi_list.csv";
-	const char* phi_after = "updated_phi_list.csv";
+	
+	
 	const int   bins = 100;
 
-	plot_angles_after(cos_after, phi_after, bins);
-	compare_angles(cos_before, cos_after, phi_before, phi_after, bins);
+	plot_angles_after(cos_out, phi_out, bins);
+	
 	return 0;
 }
 
