@@ -1,4 +1,11 @@
-﻿# Angle Determination Module Part 
+# This repository implements the use of Quantum Tomography to particle collider data 
+Code based on the work enttiled "Quantum tomography for collider physics: Illustrations with lepton pair production"
+By J. C. Martens, J.P. Ralston and J.D. Tapia Takaki
+Published by Eur.Phys.J.C 78 (2018) 1, 5 
+https://doi.org/10.1140/epjc/s10052-017-5455-8
+
+
+## Angle Determination Module Part 
 This submodule consumes data pair in the format of  X1,Y1,Z1,E1 and X2,Y2,Z2,E2 and calculates Cosine theta and Phi.
 ---
 
