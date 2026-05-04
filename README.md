@@ -6,7 +6,7 @@ https://doi.org/10.1140/epjc/s10052-017-5455-8
 
 
 ## Angle Determination Module Part 
-This submodule consumes data pair in the format of  X1,Y1,Z1,E1 and X2,Y2,Z2,E2 and calculates Cosine theta and Phi.
+This submodule take data for two particles in the format of X1,Y1,Z1,E1 and X2,Y2,Z2,E2 and calculates Cosine theta and Phi.
 ---
 
 ### 📦 Requirements
